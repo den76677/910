@@ -1,7 +1,5 @@
 1. Блочная сортировка (Bucket Sort)
 Python
-
-
 def bucket_sort(arr):
     if not arr: return arr  # Если массив пустой, возвращаем его
     buckets = [[] for _ in range(len(arr))]  # Создаем пустые корзины
@@ -17,8 +15,6 @@ def bucket_sort(arr):
 
 2. Сортировка бусинами (Bead Sort)
 Python
-
-
 def bead_sort(arr):
     max_val = max(arr)  # Находим максимальное число
     # Создаем "бусины": 1 - есть бусина, 0 - нет бусины
@@ -34,8 +30,6 @@ def bead_sort(arr):
 
 3. Альтернативная сортировка бусинами
 Python
-
-
 def bead_sort_simple(arr):
     # Первый проход: бусины падают слева направо
     for i in range(len(arr)):
@@ -57,8 +51,6 @@ def bead_sort_simple(arr):
 
 4. Поиск скачками (Jump Search)
 Python
-
-
 import math
 
 def jump_search(arr, target):
@@ -81,8 +73,6 @@ def jump_search(arr, target):
 
 5. Экспоненциальный поиск (Exponential Search)
 Python
-
-
 def exponential_search(arr, target):
     if not arr: return -1
     i = 1
@@ -104,8 +94,6 @@ def exponential_search(arr, target):
 
 6. Тернарный поиск (Ternary Search)
 Python
-
-
 def ternary_search(arr, target):
     left, right = 0, len(arr)-1
     while left <= right:
